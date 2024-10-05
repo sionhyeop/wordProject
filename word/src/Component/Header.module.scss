@@ -3,8 +3,75 @@
 @import '../styles/reset';
 
 
-.hi {
-    background-color: aqua;
-    width : 1000px;
-    height : 150px;
+.container {
+    width : 1920px;
+
+    .headerContainer{
+        position: fixed;
+        width : 1920px;
+        top: 0px;
+        left: 0px;
+        z-index: 100;
+        background-color: #FFE500;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav{
+            margin-left : 49px;
+            display: flex;
+            flex-direction: row;
+            gap : 20px;
+            width : 410px;
+            height : 41px;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            line-height: 24.96px;
+            font-family : 'SUIT-Regular';
+            div{
+                text-align: center;
+                cursor: pointer;          
+                transition: color 0.3s ease; /* 색상 변경에 애니메이션 추가 (선택사항) */      
+            }
+            div:hover {
+                color : white;
+            }
+            .plan {
+                width : 68px;
+            }
+            .problem{
+                width : 107px;
+            }
+            .search {
+                width : 107px;
+            }
+            .intro {
+                width : 68px;
+            }
+        }
+
+        .share {
+            width: 453px;
+            height: 41px;
+            gap: 10px;
+            display: flex;
+            flex-direction: row;
+            margin-right: 59px;
+            justify-content: flex-end;
+            
+            .imgDiv{
+                width : 41px;
+                height : 41px;
+                border : 1px solid #000;
+                vertical-align: middle;
+                align-content: center;
+                justify-content: center;
+                display: flex;
+                cursor: pointer;
+            }
+        }
+    }
 }
+
