@@ -1,11 +1,11 @@
 import s from "../Component/Header.module.scss"
-import logo from "../Component/Frame163.svg"
-import twitImg from "../Component/Social Icons.svg"
-import facebk from "../Component/instar.svg";
-import instar from "../Component/facebook.svg";
+import logo from "../Component/imgs/Frame163.svg"
+import twitImg from "../Component/imgs/Social Icons.svg"
+import facebk from "../Component/imgs/instar.svg";
+import instar from "../Component/imgs/facebook.svg";
 
 export default function Header() {
-    
+
     return (
         <>
             <main className={s.container}>
